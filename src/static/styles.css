@@ -58,11 +58,11 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
 }
 
 .activity-card h4 {
@@ -142,3 +142,64 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-header {
+  margin: 12px 0 6px;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.participants-list {
+  list-style: disc;
+  margin: 0 0 12px 1.2rem;
+  padding: 0;
+  display: block;
+}
+
+.participant-item {
+  display: list-item;
+  margin: 6px 0;
+  padding: 6px 10px;
+  background: #f7f9fb;
+  border-radius: 6px;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.participants-empty {
+  color: #6b7280;
+  font-style: italic;
+  margin: 6px 0;
+  padding-left: 2px;
+}
+
+.signup-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.signup-form input[type="email"] {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.signup-form button {
+  padding: 8px 12px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signup-msg {
+  margin-left: 12px;
+  font-size: 0.9rem;
+}
+
+.signup-msg.success { color: #16a34a; }
+.signup-msg.error { color: #dc2626; }
