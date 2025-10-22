@@ -58,11 +58,11 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
 }
 
 .activity-card h4 {
@@ -142,3 +142,73 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-header {
+  margin: 12px 0 6px;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.participants-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  margin: 4px 0;
+  background: #f7f9fb;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #dc2626;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 6px;
+  margin-left: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #fee2e2;
+}
+
+.signup-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.signup-form input[type="email"] {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.signup-form button {
+  padding: 8px 12px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signup-msg {
+  margin-left: 12px;
+  font-size: 0.9rem;
+}
+
+.signup-msg.success { color: #16a34a; }
+.signup-msg.error { color: #dc2626; }
