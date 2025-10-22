@@ -34,14 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>`
           : '<p class="participants-empty">No participants yet - be the first to join!</p>';
 
-        const participantsList = details.participants.length > 0
-          ? `<div class="participants">
-              <h5>Current Participants:</h5>
-              <ul>
-                ${details.participants.map(email => `<li>${email}</li>`).join('')}
-              </ul>
-            </div>`
-          : '<p><em>No participants yet - be the first to join!</em></p>';
+        // Old participants list version removed
 
         activityCard.innerHTML = `
           <h4>${name}</h4>
@@ -127,6 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
         messageDiv.textContent = result.message;
         messageDiv.className = "success";
         signupForm.reset();
+        // Refresh the activities list to show the new participant
+        fetchActivities();
       } else {
         messageDiv.textContent = result.detail || "An error occurred";
         messageDiv.className = "error";
